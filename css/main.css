@@ -1,0 +1,480 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+/* VARIABLES */
+/* ******** */
+/* line 71, C:/Users/Mika/Desktop/template/css/main.scss */
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+/* line 75, C:/Users/Mika/Desktop/template/css/main.scss */
+body {
+  background: url(../img/background.png) no-repeat;
+  background-size: cover; }
+
+/* line 81, C:/Users/Mika/Desktop/template/css/main.scss */
+section#section--navbar {
+  width: 100%;
+  height: 78px;
+  line-height: 3px;
+  color: #fff;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 0 20px;
+  font-family: "Montserrat"; }
+  /* line 90, C:/Users/Mika/Desktop/template/css/main.scss */
+  section#section--navbar .navbar-toggle {
+    margin-top: calc($headerHeight / 2 - 14px); }
+  /* line 93, C:/Users/Mika/Desktop/template/css/main.scss */
+  section#section--navbar .navbar {
+    border-bottom: 0;
+    background: transparent; }
+  /* line 97, C:/Users/Mika/Desktop/template/css/main.scss */
+  section#section--navbar .navbar-brand {
+    padding-top: 30px; }
+  /* line 100, C:/Users/Mika/Desktop/template/css/main.scss */
+  section#section--navbar .navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 78px;
+    text-transform: uppercase;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.9);
+    transition: all 0.4s ease; }
+    /* line 108, C:/Users/Mika/Desktop/template/css/main.scss */
+    section#section--navbar .navbar-nav > li > a:not(.link-btn):hover {
+      padding-left: 27px;
+      padding-right: 27px;
+      background-color: rgba(0, 0, 0, 0.3); }
+  @media (max-width: 767px) {
+    /* line 116, C:/Users/Mika/Desktop/template/css/main.scss */
+    section#section--navbar .navbar-nav {
+      background: rgba(0, 0, 0, 0.5); }
+      /* line 118, C:/Users/Mika/Desktop/template/css/main.scss */
+      section#section--navbar .navbar-nav > li > a {
+        line-height: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px; } }
+
+/* line 126, C:/Users/Mika/Desktop/template/css/main.scss */
+section#section--hero {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.22)), linear-gradient(180deg, rgba(170, 40, 251, 0.19), rgba(0, 0, 0, 0.5)), url(../img/header.jpeg) no-repeat;
+  width: 100%;
+  height: 732px;
+  background-size: cover;
+  padding: 200px 80px;
+  box-sizing: border-box; }
+  @media (min-width: 1600px) {
+    /* line 126, C:/Users/Mika/Desktop/template/css/main.scss */
+    section#section--hero {
+      margin-bottom: 80px;
+      height: 620px; } }
+  /* line 137, C:/Users/Mika/Desktop/template/css/main.scss */
+  section#section--hero .hero--wrapper {
+    will-change: opacity, transform; }
+  /* line 140, C:/Users/Mika/Desktop/template/css/main.scss */
+  section#section--hero h1 {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 3.94em;
+    font-weight: bold;
+    max-width: 70%;
+    line-height: 6rem;
+    letter-spacing: .14rem; }
+
+/* line 150, C:/Users/Mika/Desktop/template/css/main.scss */
+section#section--features {
+  margin-left: 60px;
+  margin-right: 60px; }
+  /* line 153, C:/Users/Mika/Desktop/template/css/main.scss */
+  section#section--features h1 + p, section#section--features h2 + p, section#section--features h3 + p, section#section--features h4 + p, section#section--features h5 + p {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none !important;
+    font-family: "Open Sans";
+    line-height: 1.7; }
+  /* line 160, C:/Users/Mika/Desktop/template/css/main.scss */
+  section#section--features .feature {
+    margin-bottom: 60px;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal; }
+    /* line 166, C:/Users/Mika/Desktop/template/css/main.scss */
+    section#section--features .feature .feature-icon {
+      -webkit-box-ordinal-group: 1;
+      -moz-box-ordinal-group: 1;
+      box-ordinal-group: 1;
+      text-align: center; }
+    /* line 172, C:/Users/Mika/Desktop/template/css/main.scss */
+    section#section--features .feature .description {
+      -webkit-box-ordinal-group: 2;
+      -moz-box-ordinal-group: 2;
+      box-ordinal-group: 2; }
+  @media (max-width: 767px) {
+    /* line 180, C:/Users/Mika/Desktop/template/css/main.scss */
+    section#section--features .feature-icon {
+      -webkit-box-ordinal-group: 1 !important;
+      -moz-box-ordinal-group: 1 !important;
+      box-ordinal-group: 1 !important;
+      flex: 1; }
+    /* line 186, C:/Users/Mika/Desktop/template/css/main.scss */
+    section#section--features .description {
+      -webkit-box-ordinal-group: 2 !important;
+      -moz-box-ordinal-group: 2 !important;
+      box-ordinal-group: 2 !important;
+      flex: 2; } }
+  @media (min-width: 768px) {
+    /* line 194, C:/Users/Mika/Desktop/template/css/main.scss */
+    section#section--features .feature:nth-child(even) {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse; } }
+
+/* line 203, C:/Users/Mika/Desktop/template/css/main.scss */
+section#section--chart {
+  width: 100%;
+  height: 105vh;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.22)), linear-gradient(180deg, rgba(170, 40, 251, 0.19), rgba(0, 0, 0, 0.5)), url(../img/chart-bg.jpeg) no-repeat;
+  background-size: cover;
+  font-family: "Montserrat";
+  padding: 0;
+  overflow: hidden;
+  color: white; }
+  /* line 212, C:/Users/Mika/Desktop/template/css/main.scss */
+  section#section--chart canvas {
+    width: 100%;
+    height: 80%; }
+  /* line 216, C:/Users/Mika/Desktop/template/css/main.scss */
+  section#section--chart h1 {
+    text-transform: uppercase;
+    line-height: 50px;
+    padding-top: 40px;
+    padding-left: 50px; }
+  @media (max-width: 767px) {
+    /* line 203, C:/Users/Mika/Desktop/template/css/main.scss */
+    section#section--chart {
+      height: 500px; }
+      /* line 224, C:/Users/Mika/Desktop/template/css/main.scss */
+      section#section--chart canvas {
+        display: none; } }
+
+/* line 229, C:/Users/Mika/Desktop/template/css/main.scss */
+section#section--pricing {
+  padding: 50px; }
+  /* line 231, C:/Users/Mika/Desktop/template/css/main.scss */
+  section#section--pricing .row {
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center; }
+    /* line 235, C:/Users/Mika/Desktop/template/css/main.scss */
+    section#section--pricing .row .plan {
+      width: 70%;
+      height: 345px;
+      border: 2px solid #969696;
+      border-radius: 5px;
+      margin: 0 auto 20px auto;
+      overflow: hidden; }
+      /* line 242, C:/Users/Mika/Desktop/template/css/main.scss */
+      section#section--pricing .row .plan--big {
+        width: 85%;
+        height: 370px; }
+        /* line 245, C:/Users/Mika/Desktop/template/css/main.scss */
+        section#section--pricing .row .plan--big .plan--body .plan--features ul li {
+          font-size: 17px;
+          line-height: 25px; }
+      /* line 251, C:/Users/Mika/Desktop/template/css/main.scss */
+      section#section--pricing .row .plan--heading .plan--price {
+        font-size: 86px;
+        font-family: "Montserrat";
+        padding-top: 15px; }
+        /* line 256, C:/Users/Mika/Desktop/template/css/main.scss */
+        section#section--pricing .row .plan--heading .plan--price.plan--small {
+          font-size: 50px; }
+        /* line 259, C:/Users/Mika/Desktop/template/css/main.scss */
+        section#section--pricing .row .plan--heading .plan--price span {
+          position: relative; }
+          /* line 261, C:/Users/Mika/Desktop/template/css/main.scss */
+          section#section--pricing .row .plan--heading .plan--price span::before {
+            content: attr(data-up);
+            position: absolute;
+            top: 0;
+            right: -40%;
+            color: #f57f17;
+            font-size: 35%; }
+          /* line 269, C:/Users/Mika/Desktop/template/css/main.scss */
+          section#section--pricing .row .plan--heading .plan--price span::after {
+            content: attr(data-down);
+            position: absolute;
+            bottom: 16%;
+            left: 100%;
+            color: #f57f17;
+            font-size: 20%; }
+      /* line 280, C:/Users/Mika/Desktop/template/css/main.scss */
+      section#section--pricing .row .plan--body {
+        height: 100%;
+        border-radius: 3px; }
+        /* line 283, C:/Users/Mika/Desktop/template/css/main.scss */
+        section#section--pricing .row .plan--body .plan--features {
+          background: #171717;
+          height: 100%;
+          width: 100%;
+          margin-top: -5px;
+          color: #fff;
+          padding-top: 25px; }
+          /* line 291, C:/Users/Mika/Desktop/template/css/main.scss */
+          section#section--pricing .row .plan--body .plan--features ul li {
+            font-size: 14px;
+            line-height: 23px;
+            font-family: "Open Sans"; }
+
+/* line 302, C:/Users/Mika/Desktop/template/css/main.scss */
+section#section--contact {
+  position: relative;
+  height: 975px;
+  width: 100%;
+  background: url(../img/contact_overlay.png) no-repeat 0 100%, #171717;
+  background-size: cover;
+  color: #fff; }
+  @media (min-width: 768px) {
+    /* line 302, C:/Users/Mika/Desktop/template/css/main.scss */
+    section#section--contact {
+      height: 850px; } }
+  /* line 312, C:/Users/Mika/Desktop/template/css/main.scss */
+  section#section--contact .wrapper {
+    padding: 200px 30px 0 30px; }
+  /* line 315, C:/Users/Mika/Desktop/template/css/main.scss */
+  section#section--contact h1 {
+    font-size: 40px;
+    font-family: "Montserrat";
+    text-transform: uppercase; }
+  /* line 324, C:/Users/Mika/Desktop/template/css/main.scss */
+  section#section--contact input[type=text],
+  section#section--contact textarea,
+  section#section--contact input[type=password],
+  section#section--contact input[type=number],
+  section#section--contact input[type=date] {
+    min-height: 50px;
+    font-size: 13px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: none !important;
+    transition: background 0.3s ease;
+    margin-top: 30px;
+    padding: 20px 15px;
+    color: #fff;
+    text-shadow: none !important; }
+    /* line 339, C:/Users/Mika/Desktop/template/css/main.scss */
+    section#section--contact input[type=text]:hover,
+    section#section--contact input[type=text]:focus,
+    section#section--contact input[type=text]:active,
+    section#section--contact textarea:hover,
+    section#section--contact textarea:focus,
+    section#section--contact textarea:active,
+    section#section--contact input[type=password]:hover,
+    section#section--contact input[type=password]:focus,
+    section#section--contact input[type=password]:active,
+    section#section--contact input[type=number]:hover,
+    section#section--contact input[type=number]:focus,
+    section#section--contact input[type=number]:active,
+    section#section--contact input[type=date]:hover, section#section--contact input[type=date]:focus, section#section--contact input[type=date]:active {
+      box-shadow: none !important;
+      border: none;
+      background: rgba(255, 255, 255, 0.2); }
+  /* line 345, C:/Users/Mika/Desktop/template/css/main.scss */
+  section#section--contact textarea {
+    text-transform: none;
+    resize: none; }
+  /* line 349, C:/Users/Mika/Desktop/template/css/main.scss */
+  section#section--contact .social-icons-bar {
+    width: 100%;
+    min-height: 88px;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); }
+    @media (max-width: 767px) {
+      /* line 349, C:/Users/Mika/Desktop/template/css/main.scss */
+      section#section--contact .social-icons-bar {
+        margin-top: 40px; } }
+    /* line 358, C:/Users/Mika/Desktop/template/css/main.scss */
+    section#section--contact .social-icons-bar .container {
+      text-align: center; }
+    /* line 361, C:/Users/Mika/Desktop/template/css/main.scss */
+    section#section--contact .social-icons-bar .social-icon {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 100%;
+      margin-top: 15px;
+      margin-right: 10px; }
+      /* line 366, C:/Users/Mika/Desktop/template/css/main.scss */
+      section#section--contact .social-icons-bar .social-icon i {
+        color: rgba(0, 0, 0, 0.4); }
+        /* line 368, C:/Users/Mika/Desktop/template/css/main.scss */
+        section#section--contact .social-icons-bar .social-icon i:hover {
+          color: rgba(0, 0, 0, 0.5); }
+
+/* line 37, C:/Users/Mika/Desktop/template/css/main.scss */
+input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.15) !important; }
+
+/* line 41, C:/Users/Mika/Desktop/template/css/main.scss */
+input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.15) !important; }
+
+/* line 45, C:/Users/Mika/Desktop/template/css/main.scss */
+input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.15) !important; }
+
+/* line 49, C:/Users/Mika/Desktop/template/css/main.scss */
+input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.15) !important; }
+
+/* line 52, C:/Users/Mika/Desktop/template/css/main.scss */
+textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.15) !important; }
+
+/* line 56, C:/Users/Mika/Desktop/template/css/main.scss */
+textarea:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.15) !important; }
+
+/* line 60, C:/Users/Mika/Desktop/template/css/main.scss */
+textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.15) !important; }
+
+/* line 64, C:/Users/Mika/Desktop/template/css/main.scss */
+textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.15) !important; }
+
+/* line 379, C:/Users/Mika/Desktop/template/css/main.scss */
+.description {
+  font-family: "Quicksand";
+  vertical-align: top; }
+  /* line 382, C:/Users/Mika/Desktop/template/css/main.scss */
+  .description h3 {
+    font-weight: normal; }
+
+/* line 386, C:/Users/Mika/Desktop/template/css/main.scss */
+.call-to-action {
+  margin-top: 25px; }
+
+/* line 389, C:/Users/Mika/Desktop/template/css/main.scss */
+.btn {
+  transition: all 0.3s ease;
+  box-shadow: none !important;
+  padding: 6px 22px;
+  border-radius: 20px;
+  font-family: "Montserrat";
+  text-transform: uppercase; }
+  /* line 395, C:/Users/Mika/Desktop/template/css/main.scss */
+  .btn:active, .btn:hover, .btn:focus {
+    box-shadow: none;
+    border: none;
+    outline: 0 !important; }
+  /* line 400, C:/Users/Mika/Desktop/template/css/main.scss */
+  .btn.btn-lg {
+    font-size: 14px;
+    padding: 10px 33px; }
+  /* line 405, C:/Users/Mika/Desktop/template/css/main.scss */
+  .btn i {
+    padding-right: 11px;
+    font-size: 14px; }
+  /* line 409, C:/Users/Mika/Desktop/template/css/main.scss */
+  .btn.btn-reflected {
+    padding-left: 29px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: none;
+    transition: none; }
+    /* line 410, C:/Users/Mika/Desktop/template/css/main.scss */
+    .btn.btn-reflected.btn-lg {
+      padding-left: 40px; }
+    /* line 418, C:/Users/Mika/Desktop/template/css/main.scss */
+    .btn.btn-reflected.btn-lg i.icon-reflected {
+      font-size: 59px; }
+    /* line 421, C:/Users/Mika/Desktop/template/css/main.scss */
+    .btn.btn-reflected i.icon-reflected {
+      position: absolute;
+      left: 0;
+      top: -3px;
+      opacity: .24;
+      color: white;
+      font-size: 40px;
+      transform: rotate(12deg);
+      transition: all 0.4s ease; }
+    /* line 431, C:/Users/Mika/Desktop/template/css/main.scss */
+    .btn.btn-reflected i:not(.icon-reflected) {
+      transition: left 0.4s ease; }
+    /* line 434, C:/Users/Mika/Desktop/template/css/main.scss */
+    .btn.btn-reflected:hover {
+      color: transparent !important;
+      text-shadow: none !important; }
+      /* line 437, C:/Users/Mika/Desktop/template/css/main.scss */
+      .btn.btn-reflected:hover i:not(.icon-reflected) {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white !important; }
+  /* line 445, C:/Users/Mika/Desktop/template/css/main.scss */
+  .btn.btn-warning {
+    background-color: #f57f17;
+    border: 1px solid #f57f17; }
+    /* line 448, C:/Users/Mika/Desktop/template/css/main.scss */
+    .btn.btn-warning:active {
+      background-color: #e8720a;
+      border-color: 1px solid daren(#df7111, 5%); }
+  /* line 453, C:/Users/Mika/Desktop/template/css/main.scss */
+  .btn + .btn-hint {
+    position: relative;
+    background: radial-gradient(circle at -3% 50%, transparent 19px, rgba(255, 255, 255, 0.11) 15px);
+    font-size: 11px;
+    font-family: "Montserrat";
+    margin-left: -12px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: none;
+    border: none;
+    cursor: default;
+    color: white;
+    padding-top: 13px;
+    padding-bottom: 13px; }
+
+/* line 469, C:/Users/Mika/Desktop/template/css/main.scss */
+.icon-bar {
+  background-color: #fff !important; }
+
+/* line 474, C:/Users/Mika/Desktop/template/css/main.scss */
+.phone {
+  position: absolute;
+  right: 130px;
+  top: 400px;
+  width: 190px;
+  height: 393px;
+  background: url(../img/phone.png); }
+  /* line 481, C:/Users/Mika/Desktop/template/css/main.scss */
+  .phone .scroller {
+    position: relative;
+    width: 173px;
+    height: 306px;
+    margin-left: 9px;
+    margin-top: 40px;
+    border-radius: 2px;
+    background: url(../img/phone-scroller.png);
+    transition: background-position 0.5s cubic-bezier(0.54, 0.35, 0.14, 1.39);
+    background-size: 100%; }
+
+/* line 493, C:/Users/Mika/Desktop/template/css/main.scss */
+.placeholder {
+  width: 100%;
+  height: 700px;
+  background: yellow; }
+
+/* line 499, C:/Users/Mika/Desktop/template/css/main.scss */
+svg[width="0"][height="0"] {
+  position: absolute; }
+
+/*# sourceMappingURL=main.css.map */

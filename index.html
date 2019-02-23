@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="section--navbar">
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo-placeholder.png" alt="">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li>
+                       <a class="link-btn">
+                            <button class="hidden-xs btn btn-reflected btn-warning">
+                                <i class="fa fa-facebook"></i>
+                                Sign In with Facebook
+                            </button>
+                            <span class="visible-xs-block">
+                                Sign in with Facebook
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <section id="section--hero" class="curved-bottom">
+        <div class="hero--wrapper">
+            <h1>EXPLORE THE WORLD AROUND YOU</h1>
+            <div class="call-to-action">
+                <button class="btn btn-warning btn-reflected btn-lg">
+                    <i class="fa fa-download"></i>
+                    Try for free
+                </button>
+                <span class="btn btn-lg btn-hint">
+                    Unlimited Offer
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <div style="display: none;" class="phone hidden-xs hidden-sm">
+        <div class="scroller">
+            
+        </div>
+    </div>
+    <section id="section--features" class="row container">
+        <div class="col-xs-12">
+            <div class="row feature">
+                <span class="col-md-4 col-xs-12 col-sm-4 feature-icon">
+                    <img width="126" src="img/icons/weight.png" alt="">
+                </span>
+                <span class="col-md-8 col-xs-12 col-sm-8 description">
+                    <h3>BURN CALORIES WHILE EXPLORING THE WORLD</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis temporibus quo consequatur, dolore ducimus laborum omnis numquam, magni, dignissimos minima aperiam laboriosam. Cumque repudiandae sint neque quas beatae voluptas, iure.</p>
+                </span>
+            </div>
+            <div class="row feature">
+                <span class="col-md-4 col-xs-12 col-sm-4 feature-icon">
+                    <img width="126" src="img/icons/browser.png" alt="">
+                </span>
+                <span class="col-md-8 col-xs-12 col-sm-8 description">
+                    <h3>TRACK YOUR PROGRESS AND ENJOY YOUR TRIP</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis temporibus quo consequatur, dolore ducimus laborum omnis numquam, magni, dignissimos minima aperiam laboriosam. Cumque repudiandae sint neque quas beatae voluptas, iure.</p>
+                </span>
+            </div>
+            <div class="row feature">
+                <span class="col-md-4 col-xs-12 col-sm-4 feature-icon">
+                    <img width="126" src="img/icons/coffee.png" alt="">
+                </span>
+                <span class="col-md-8 col-xs-12 col-sm-8 description">
+                    <h3>SHARE YOUR SUCCESS WITH FRIENDS</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis temporibus quo consequatur, dolore ducimus laborum omnis numquam, magni, dignissimos minima aperiam laboriosam. Cumque repudiandae sint neque quas beatae voluptas, iure.</p>
+                </span>
+            </div>
+        </div>
+    </section>
+    <section class="curved-bottom" id="section--chart">
+        <h1>Check out how our users are doing.<br>Join our team and become one of us.</h1>
+        <canvas id="chart"></canvas>
+    </section>
+
+    <section id="section--pricing">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+               <div class="plan">
+                    <div class="plan--heading">
+                        <h3 class="plan--price plan--small">
+                            <span>FREE</span>
+                        </h3>
+                    </div>
+                    <div class="plan--body">
+                        <img src="img/pricing.svg" width="100%" alt="">
+                        <div class="plan--features">
+                            <ul>
+                                <li>Create routes</li>
+                                <li>Edit current routes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+               <div class="plan plan--big">
+                    <div class="plan--heading">
+                        <h3 class="plan--price">
+                            <span data-up="$" data-down=".00">5</span>
+                        </h3>
+                    </div>
+                    <div class="plan--body">
+                        <img src="img/pricing.svg" width="100%" alt="">
+                        <div class="plan--features">
+                            <ul>
+                                <li>Create routes</li>
+                                <li>Edit current routes</li>
+                                <li>Pulse sensor</li>
+                                <li>Dehydration measure</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                <div class="plan">
+                    <div class="plan--heading">
+                        <h3 class="plan--price">
+                            <span data-up="$" data-down=".00">10</span>
+                        </h3>
+                    </div>
+                    <div class="plan--body">
+                        <img src="img/pricing.svg" width="100%" alt="">
+                        <div class="plan--features">
+                            <ul>
+                                <li>Create routes</li>
+                                <li>Edit current routes</li>
+                                <li>Pulse sensor</li>
+                                <li>Dehydration measure</li>
+                                <li>Team management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section--contact" class="curved-top">
+        <div class="wrapper">
+            <h1>Lets have a talk</h1>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                            <input class="form-control" placeholder="FIRST NAME" type="text">
+                        </div>
+                        <!-- /.col-sm-12 col-xs-12 col-md-6 col-lg-6 -->
+                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                            <input class="form-control" placeholder="LAST NAME" type="text">
+                        </div>
+                        <!-- /.col-sm-12 col-xs-12 col-md-6 col-lg-6 -->
+                    </div>
+
+                    <!-- /.row -->
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                            <input class="form-control" placeholder="E-MAIL ADDRESS" type="text">
+                        </div>
+                        <!-- /.col-sm-12 col-xs-12 col-md-6 col-lg-6 -->
+                        <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                            <input class="form-control" placeholder="SUBJECT" type="text">
+                        </div>
+                        <!-- /.col-sm-12 col-xs-12 col-md-6 col-lg-6 -->
+                    </div>
+                    <!-- /.row -->
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+                            <textarea class="form-control" rows="10" placeholder="SOMETHING THAT YOU WANT TO TALK ABOUT"></textarea>
+                        </div>
+                        <!-- /.col-sm-12 col-xs-12 col-md-6 col-lg-6 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.col-xs-12 col-sm-12 col-md-5 col-lg-5 -->
+            </div>
+            <!-- /.row -->
+            <br />
+            <button class="btn btn-lg btn-reflected btn-warning">
+                <i class="fa fa-3x fa-paper-plane"></i>
+                Send message
+            </button>
+        </div>
+        <div class="social-icons-bar">
+            <div class="container">
+                <a href="#" class="social-icon fa-stack fa-2x">
+                  <i class="fa fa-facebook fa-stack-1x"></i>
+                </a>
+                <a href="#" class="social-icon fa-stack fa-2x">
+                  <i class="fa fa-twitter fa-stack-1x"></i>
+                </a>
+                <a href="#" class="social-icon fa-stack fa-2x">
+                  <i class="fa fa-youtube fa-stack-1x"></i>
+                </a>
+                 <a href="#" class="social-icon fa-stack fa-2x">
+                  <i class="fa fa-instagram fa-stack-1x"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pull in jQuery -->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <script src="js/animateScroll.js"></script>
+    <script src="js/phoneScroller.js"></script>
+    <script src="js/chartDrawer.js"></script>
+    <script src="js/clip-path-polygon.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
